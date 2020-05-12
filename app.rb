@@ -30,3 +30,4 @@ get '/named-cat' do
   @names = params[:name]
   erb (:index)
 end
+
