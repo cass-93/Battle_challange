@@ -23,4 +23,7 @@ end
 
 get '/cat' do
   erb(:index)
+  def initialize(name)
+    @name = ["amigo", "oscar", "viking" ].sample
+  end
 end
