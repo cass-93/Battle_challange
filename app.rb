@@ -21,7 +21,12 @@ get '/latest' do
   "This should be the newest info"
 end
 
-get '/cat' do
+get '/random-cat' do
     @names = ["Amigo", "Chan", "Viking"].sample
     erb (:index)
+end
+
+get '/named-cat' do
+  @names = params[:name]
+  erb (:index)
 end
