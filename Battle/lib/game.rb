@@ -2,6 +2,7 @@ class Game
   def initialize(player_1, player_2)
     @player_1 = player_1
     @player_2 = player_2
+    @current_turn = @player_1.name
   end
 
   def player_1
@@ -10,6 +11,10 @@ class Game
 
   def player_2
     @player_2
+  end
+
+  def current_turn
+    @current_turn
   end
 
   def attack(player)
