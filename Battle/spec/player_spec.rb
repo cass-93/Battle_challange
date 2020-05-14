@@ -3,11 +3,11 @@ require "./lib/player.rb"
 describe Player do
   cj = Player.new("CJ", 60)
 
-  it "should create a new instance of itself" do 
+  it "should create a new instance of itself" do
     expect(cj).to be_instance_of Player
   end
 
-  describe "#attack" do 
+  describe "#attack" do
     it "should respond to an attack method" do
       expect(cj).to respond_to :attack
     end
@@ -23,7 +23,7 @@ describe Player do
     end
 
     it "should take the hp value and return 10 less" do
-      expect(cj.reduce_hp).to eq 50
+      expect(cj.reduce_hp).to eq 40
     end
   end
 end
