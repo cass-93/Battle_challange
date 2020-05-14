@@ -7,12 +7,6 @@ class Player
     @hp = hp
   end
 
-  #attck method
-  def attack
-    reduce_hp
-    #should call reduce hp
-  end
-
   #reduce hp method
   def reduce_hp
     @hp -=10
