@@ -11,8 +11,8 @@ feature "the current players name is displayer" do
 
   scenario "should show Jeroms turn after the attack" do
     sign_in_and_play
-    click_link("Attack")
-    click_link("Okay")
+    click_link "Attack"
+    click_button "Okay"
     expect(page).to have_content("Current player: Jerome")
   end
 end

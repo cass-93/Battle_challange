@@ -1,3 +1,5 @@
-<%= @game.player_1.name %> attacked <%= @game.player_2.name %>
+<%= @game.current_turn.name %> attacked <%= @game.opponent.name %>
 
-<a href="/play"> Okay </a>
+<form action="/switch_turns" method="post" >
+  <input type="submit" value="Okay">
+  </form>

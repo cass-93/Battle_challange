@@ -35,4 +35,17 @@ describe Game do
       expect(subject.switch_turns).to eq jerome
     end
   end
+
+  describe "#opponent" do
+    it "should respond to opponent" do
+      expect(subject).to respond_to :opponent
+    end
+    it "should opponent = player_2" do
+      expect(subject.opponent).to eq jerome
+    end
+    it "should = player_1" do
+      subject.switch_turns
+      expect(subject.opponent).to eq cj
+    end
+  end
 end
